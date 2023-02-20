@@ -1,0 +1,61 @@
+@import (reference) "../partials/mixins.less";
+
+.city-cards {
+    padding: 50px 0;
+    background-color: var(--darkbrown);
+    height: 100%;
+
+    .title {
+        color: var(--yellow);
+        
+        > h4 {
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 100;
+            .georgia();
+        }
+
+        > h2 {
+            text-transform: uppercase;
+            font-size: 33px;
+            font-weight: 100;
+            margin-bottom: 30px;
+        }
+    }
+
+    .city-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--lightbrown);
+        box-shadow: 2px 2px 5px black;
+        margin-bottom: 10px;
+        
+       
+        .img-container {
+            position: relative;
+            width: 100%;
+            padding-top: 87%;
+            
+            img {
+                position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0; bottom: 0; left: 0; right: 0;
+				object-fit: cover;
+            }
+        }
+
+        .city-button-container {
+            text-align: center;
+            width: 100%;
+            padding: 25px 0;
+
+            > a {
+                padding-top: 6px;
+                padding-bottom: 6px;
+                .georgia();
+            }
+        }      
+    }
+}

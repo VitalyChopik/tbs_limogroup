@@ -1,0 +1,15 @@
+<section class="{{ fields.background_color }} {{ fields.text_color }} text-image">
+    <div class="container-fluid">
+        <div class="row grid">
+                     
+            <div class="image col-lg-5 col-sm-12">
+                {{ fn('wp_get_attachment_image', fields.image.id, 'fullsize') }} 
+            </div>
+
+            <div class="text col-lg-4 col-sm-12">
+                {{ fields.text }}
+            </div>
+
+        </div>
+    </div>
+</section>

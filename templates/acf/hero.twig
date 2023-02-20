@@ -1,0 +1,15 @@
+<section class="hero">
+    
+    <div class="img-container">
+	{{ fn('wp_get_attachment_image', fields.image.id, 'fullsize') }} 
+       
+	</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="text-container col-lg-10 col-md-12 col-sm-12 col-12">
+                {{ fields.text }}
+            </div>
+        </div>
+    </div>
+</section>

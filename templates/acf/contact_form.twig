@@ -1,0 +1,42 @@
+<section class="contact-form {{ fields.slim[0] }}" id="contact-form-{{ fields.slim[0] }}">
+    <div class="container">
+        {% if fields.slim is not empty and fields.slim[0] == 'slim' %}
+        {% else %}
+            <header class="contact-header justify-content-center row">
+                <div class="col-12">
+                    <p class="contact-header-title h1">{{ __('KONTAKT', 'tribusoft_limogroup') }}</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <p class="title h3 georgia">{{ __('Phone', 'tribusoft_limogroup') }}</p>
+
+                    <div class="text">
+                        <p>{{ __('Du når oss på', 'tribusoft_limogroup') }}</br><a href="tel:+46 85229 39 80">+46 85229 39 80</a></p>
+                    </div>
+                </div>
+
+                <div class="center-column col-lg-3 col-md-4">
+                    <p class="title h3 georgia">{{ __('Address', 'tribusoft_limogroup') }}</p>
+
+                    <div class="text">
+                        <p>Limogroup Sweden<br>Linnégatan 52<br>114 54 Stockholm</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <p class="title h3 georgia">Email</p>
+
+                    <div class="text">
+                        <a href="mailto:info@limogroup.se">info@limogroup.se</a>
+                    </div>
+                </div>
+            </header>
+        {% endif %}
+
+        <div clas="row">
+            <div class="col-12">
+                {{ fields.contact_form_7 }}
+            </div>
+        </div>
+    </div>
+</section>

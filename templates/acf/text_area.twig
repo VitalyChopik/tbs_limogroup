@@ -1,0 +1,33 @@
+<section
+	class="{{ fields.background_color }} {{ fields.text_color }} {{ fields.css_classes }} text-area"
+	style="
+		{{ fields.padding_override_top is not empty ? 'padding-top: ' ~ fields.padding_override_top ~ ';' : '' }}
+		{{ fields.padding_override_bottom is not empty ? 'padding-bottom: ' ~ fields.padding_override_bottom ~ ';' : '' }}
+	">
+    <div class="container{{ fields.full_width is not empty ? fields.full_width[0] : '' }}">
+		<div class="
+			{{ fields.narrow_center_column is not empty ? fields.narrow_center_column[0] : '' }}
+			{{ fields.reverse_column_order[0] }} 
+			row
+			">
+			{% for column in fields.columns %}
+				{% set columns_class = 'col-lg-' ~ 12 / (fields.columns | length) ~ ' col-md-6' %}
+				<div class="column {{ fields.image_slider is not empty ? 'col-lg-6' : (fields.narrow_center_column is not empty ? 'col-12' : columns_class) }}">
+					<div class="text">
+						{{ column.text }}
+					</div>
+				</div>
+			{% endfor %}
+
+			{% if fields.image_slider is not empty %}
+				<div class="image-slider col-lg-6">
+					<div class="image-container">
+						{% for image_slide in fields.image_slider %}
+							{{ fn('wp_get_attachment_image', image_slide.image.id, 'fullsize') }}
+						{% endfor %}
+					</div>
+				</div>
+			{% endif %}
+        </div>
+    </div>
+</section>

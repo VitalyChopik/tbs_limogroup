@@ -1,0 +1,21 @@
+.text-image {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 70px 0;
+  background-color: white;
+}
+.text-image .grid {
+  justify-content: space-evenly;
+}
+.text-image .text {
+  margin: 20px 0;
+  font-weight: 300;
+}
+.text-image .image {
+  width: 100%;
+}
+.text-image .image > img {
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,89 @@
+.text-area {
+  position: relative;
+  width: 100%;
+  padding: 70px 0;
+  background-color: white;
+}
+.text-area .reverse-column-order {
+  flex-direction: row-reverse;
+}
+.text-area .container-fluid .column {
+  display: flex;
+  align-items: center;
+}
+.text-area.no-fluid-padding .text {
+  padding: 0 !important;
+}
+.text-area .container-fluid .text {
+  padding: 60px;
+}
+@media (max-width: 767px) {
+  .text-area .container-fluid .text {
+    padding: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .text-area .container-fluid .text {
+    padding: 15px 0;
+  }
+}
+.text-area .text {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.text-area .text > * {
+  font-size: inherit;
+}
+.text-area .text > *:last-child {
+  margin-bottom: 0;
+}
+.text-area .text > p > img {
+  height: auto;
+  width: 100%;
+}
+.text-area .image-slider {
+  min-height: 80vh;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .text-area .image-slider {
+    height: 0;
+    min-height: unset;
+    padding-top: 75%;
+  }
+}
+.text-area .image-slider .image-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.text-area .image-slider .slick-list,
+.text-area .image-slider .slick-track {
+  height: 100%;
+}
+.text-area .image-slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.text-area .image-slider .slick-dots {
+  bottom: 0;
+  padding: 2px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.text-area .image-slider .slick-dots li button::before {
+  color: white;
+  font-size: 12px;
+}
+.text-area .narrow-center-column {
+  justify-content: center;
+}
+.text-area .narrow-center-column > div {
+  max-width: 700px;
+}

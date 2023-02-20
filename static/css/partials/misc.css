@@ -1,0 +1,29 @@
+.slick-slide {
+  outline: none;
+  border: none;
+}
+#iFrameResizer0 {
+  border: 1px solid lightgray;
+}
+@media (max-width: 991px) {
+  #content {
+    margin-top: 80px;
+  }
+}
+.pum-container.popmake {
+  background-color: var(--darkbrown) !important;
+}
+.pum-container.popmake .pum-content.popmake-content {
+  padding-right: 15px;
+}
+.pum-container.popmake .pum-close.popmake-close {
+  background-color: var(--lightbrown) !important;
+  color: white !important;
+}
+.pum-container.popmake a {
+  background-color: white;
+  color: var(--darkbrown) !important;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 1rem 0 0;
+}

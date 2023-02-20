@@ -1,0 +1,137 @@
+.contact-form {
+  padding: 100px 0;
+  color: var(--yellow);
+  background-color: var(--darkbrown);
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .contact-form {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  .contact-form {
+    padding: 40px 0;
+  }
+}
+.contact-form.slim {
+  padding-top: 0;
+  color: var(--darkbrown);
+  background-color: white;
+}
+.contact-form .contact-header {
+  margin: 0 0 120px;
+}
+.contact-form .contact-header a {
+  color: inherit;
+  text-decoration: underline;
+}
+.contact-form .contact-header .contact-header-title {
+  margin-bottom: 80px;
+}
+.contact-form .contact-header .title {
+  margin-bottom: 30px;
+}
+.contact-form .contact-header .center-column {
+  border-left: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+}
+@media (max-width: 767px) {
+  .contact-form .contact-header .center-column {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+  }
+}
+.contact-form .wpcf7 .title {
+  max-width: 580px;
+  margin: 0 auto 30px;
+  text-align: left;
+  color: inherit;
+}
+.contact-form .wpcf7 input[type="text"],
+.contact-form .wpcf7 input[type="email"],
+.contact-form .wpcf7 input[type="tel"],
+.contact-form .wpcf7 input[type="date"],
+.contact-form .wpcf7 textarea {
+  width: 100%;
+  max-width: 580px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin-bottom: 5px;
+  outline: none;
+}
+.contact-form .wpcf7 input[type="text"]::placeholder,
+.contact-form .wpcf7 input[type="email"]::placeholder,
+.contact-form .wpcf7 input[type="tel"]::placeholder,
+.contact-form .wpcf7 input[type="date"]::placeholder,
+.contact-form .wpcf7 textarea::placeholder {
+  color: inherit;
+}
+.contact-form .wpcf7 textarea {
+  height: 200px;
+}
+.contact-form .wpcf7 input[type="submit"] {
+  background-color: transparent;
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+  padding: 10px 25px 8px;
+  margin: 5px 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.contact-form .wpcf7 input[type="submit"]:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+.contact-form .wpcf7 .wpcf7-response-output {
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-form.slim .wpcf7 .wpcf7-form-control-wrap {
+  display: block;
+  margin-bottom: 20px;
+}
+.contact-form.slim .wpcf7 input[type="text"],
+.contact-form.slim .wpcf7 input[type="email"],
+.contact-form.slim .wpcf7 input[type="tel"],
+.contact-form.slim .wpcf7 input[type="date"],
+.contact-form.slim .wpcf7 textarea {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--brown);
+  border-width: 2px;
+  border-color: var(--brown);
+  font-size: 18px;
+}
+.contact-form.slim .wpcf7 input[type="text"]::placeholder,
+.contact-form.slim .wpcf7 input[type="email"]::placeholder,
+.contact-form.slim .wpcf7 input[type="tel"]::placeholder,
+.contact-form.slim .wpcf7 input[type="date"]::placeholder,
+.contact-form.slim .wpcf7 textarea::placeholder {
+  text-transform: uppercase;
+}
+.contact-form.slim .wpcf7 input[type="date"] {
+  padding-left: 60px;
+}
+.contact-form.slim .wpcf7 input[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 22px 8px;
+  color: white;
+  background-color: var(--darkbrown);
+  border-color: var(--darkbrown);
+}
+@media (max-width: 574px) {
+  .contact-form.slim .wpcf7 input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

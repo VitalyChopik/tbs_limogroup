@@ -1,0 +1,26 @@
+<section class="faq text-area">
+    <div class="container">
+		<div class="row">
+            <div class="text-column text col-xl-8 col-lg-7 col-md-6 col-12">
+                {{ fields.header_text }}
+
+                <div class="questions">
+                    {% for question in fields.questions %}
+                        <div class="question">
+                            <button class="toggle-expand">
+                                {{ question.title }}
+                                <img src="{{ theme.link }}/static/img/angle_down-icon.svg">
+                            </button>
+
+                            <div class="text">{{ question.text }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="image-column col-xl-4 col-lg-5 col-md-6 col-12">
+                {{ fn('wp_get_attachment_image', fields.image.id, 'large') }}
+            </div>
+        </div>
+    </div>
+</section>

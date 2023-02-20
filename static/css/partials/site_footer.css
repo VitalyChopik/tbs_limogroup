@@ -1,0 +1,98 @@
+#site-footer {
+  position: relative;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-color: var(--green);
+}
+@media (max-width: 990px) {
+  #site-footer {
+    text-align: center;
+  }
+}
+#site-footer .map-slider {
+  height: 350px;
+  margin-bottom: 170px;
+}
+#site-footer .map-slider .slick-list {
+  overflow: hidden;
+}
+#site-footer .map-slider .slick-list,
+#site-footer .map-slider .slick-track {
+  height: 100%;
+}
+#site-footer .map-slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(1) grayscale(1);
+}
+#site-footer .widgets {
+  width: 100%;
+  margin: 1rem 0;
+}
+#site-footer .widget-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#site-footer .column-1-title {
+  text-align: center;
+}
+#site-footer .column-1-cols {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media (max-width: 990px) {
+  #site-footer .column-1-cols {
+    justify-content: space-evenly;
+  }
+}
+#site-footer .column-1-cols p {
+  margin-bottom: 10px;
+}
+#site-footer .social-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 990px) {
+  #site-footer .social-row {
+    justify-content: center;
+  }
+}
+#site-footer .social-row > a {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  display: block;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 40px;
+  color: black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#site-footer p,
+#site-footer a {
+  color: #eaeaea;
+  font-family: "SD Georgia", serif;
+  font-size: 12px;
+  font-weight: 100;
+}
+#site-footer a:hover {
+  text-decoration: underline !important;
+}
+#site-footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+#site-footer ul li {
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+#site-footer .contact-form-link {
+  margin-top: 2rem;
+}
+#site-footer .contact-form-link:hover {
+  text-decoration: none !important;
+}

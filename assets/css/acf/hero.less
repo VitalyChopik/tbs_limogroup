@@ -1,0 +1,58 @@
+@import (reference) "../partials/mixins.less";
+
+.hero {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    @media (max-width: 991px) {
+        height: auto;
+    }
+
+    .img-container {
+        position: absolute;
+        left: 0; right: 0; top: 0;
+        height: 100%;
+        width: 100%;
+        
+        > img {
+            height: 100%;
+			width: 100%;
+			filter: brightness(50%);
+			object-fit: cover;
+        }
+    }
+
+    .text-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 150px 0 0;
+
+        @media (max-width: 991px) {
+            padding: 250px 0 50px;
+        }
+        
+        @media (max-width: 767px) {
+            padding: 75px 0 50px;
+        }
+
+        > * {
+            text-transform: uppercase;
+        }
+
+        > *:last-child { 
+            margin-bottom: 0; 
+        }
+        
+        > p {
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }            
+        }
+    }
+}

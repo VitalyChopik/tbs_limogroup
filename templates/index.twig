@@ -1,0 +1,7 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	{% for item in post.meta('flexible_content') %}
+		{{ include('acf/' ~ item.acf_fc_layout ~ '.twig', { fields: item }) }}
+	{% endfor %}
+{% endblock %}

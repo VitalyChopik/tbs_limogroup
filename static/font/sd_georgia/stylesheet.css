@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SD Georgia';
+    src: url('SDGeorgiaLight.woff2') format('woff2'),
+        url('SDGeorgiaLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

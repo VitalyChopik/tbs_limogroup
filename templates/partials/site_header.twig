@@ -1,0 +1,49 @@
+<header id="site-header">
+    {% set url = '/' %}
+    {% if icl_language_code == 'en' %}
+        {% set url = '/en/' %}
+    {% endif %}
+
+    <a href="{{ url }}" class="logo">
+        <img src="{{ theme.link }}/static/img/old_logo-emblem.png">
+    </a>
+
+    <nav class="nav-menu">
+        <ul class="nav-main">
+            {% for item in site_header_menu.items %}
+                <li class="nav-main-item {{ item.classes|join(' ') }}">
+                    {% if item.children %}
+                        <a class="nav-main-link h3 georgia" href="{{ item.link }}">{{ item.title }}</a>
+                        <button class="toggle-nav-drop">
+                            <img src="{{ theme.link }}/static/img/angle_down-icon.svg">
+                        </button>
+
+                        <ul class="nav-drop">
+                            {% for child in item.children %}
+                                <li class="nav-drop-item">
+                                    <a href="{{ child.link }}">{{ child.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <a class="nav-main-link h3 georgia" href="{{ item.link }}">{{ item.title }}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <div class="right">
+        {% set url = '/bokningar' %}
+        {% if icl_language_code == 'en' %}
+            {% set url = '/en/booking' %}
+        {% endif %}
+
+        <a href="{{ url }}" class="book-now h2 georgia">Request a quote</a>
+
+        <button class="toggle-nav">
+            <img src="{{ theme.link }}/static/img/hamburger-icon.svg" class="hamburger">
+            <img src="{{ theme.link }}/static/img/close-icon.svg" class="close">
+        </button>
+    </div>
+</header>

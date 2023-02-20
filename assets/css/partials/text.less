@@ -1,0 +1,355 @@
+@import (reference) 'mixins.less';
+@import (reference) "colors.less";
+
+* {
+    .ubuntu();
+}
+
+.ubuntu {
+    .ubuntu();
+}
+
+.georgia {
+    .georgia();
+}
+
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5 {
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: block;
+    word-break: break-word;
+}
+
+.fiftypixels {
+    font-size: 50px;
+
+    @media (max-width: 767px) {
+		font-size: 38px !important;
+	}
+
+	@media (max-width: 574px) {
+		font-size: 30px !important;
+	}
+}
+
+.seventeenpixels {
+    font-size: 17px;
+}
+
+.h1 {
+	font-size: 44px !important;
+
+	@media (max-width: 767px) {
+		font-size: 38px !important;
+	}
+
+	@media (max-width: 574px) {
+		font-size: 30px !important;
+	}
+}
+
+.h2 {
+	font-size: 30px;
+
+	@media (max-width: 574px) {
+		font-size: 28px !important;
+	}
+}
+
+.h3 {
+	font-size: 25px;
+}
+
+.h4 {
+	font-size: 21px;
+}
+
+.h5 {
+	font-size: 15px !important;
+}
+
+button {
+    &,
+    &:focus,
+    &:active {
+        border: none;
+        outline: none !important;
+        background: none;
+    }
+}
+
+.arrow-button--darkbrown {
+    position: relative;
+    background-color: var(--darkbrown);
+    color: var(--yellow) !important;
+    padding: 15px 60px 13px 20px;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:after {
+        content:"";
+        background-image: url(/wp-content/themes/tbs_limogroup/static/img/angle_down_double-icon.svg); 
+        width: 20px;
+        height: 20px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        right: 18px;
+        margin: auto;
+    }
+}
+
+.arrow-button--lightbrown {
+    position: relative;
+    background-color: var(--lightbrown);
+    color: var(--yellow) !important;
+    padding: 15px 60px 13px 20px;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:after {
+        content:"";
+        background-image: url(/wp-content/themes/tbs_limogroup/static/img/angle_down_double-icon.svg); 
+        width: 20px;
+        height: 20px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        right: 18px;
+        margin: auto;
+    }
+}
+
+*[class^="frame-button"] {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    &:after {
+        background: #fff;
+        content: " " !important;
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+    }
+
+    &:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+.frame-button--green {
+    border: 2px solid var(--green);
+    color: var(--green);
+    padding: 10px 25px 8px;
+    margin: 5px 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    &:after {
+        background-color: var(--green);
+    }
+
+    &:hover {
+        color: var(--green);
+        text-decoration: none;
+    }
+}
+
+.frame-button--yellow {
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    padding: 10px 25px 8px;
+    margin: 5px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    &:hover {
+        color: var(--yellow);
+        text-decoration: none;
+    }
+}
+
+.frame-button--green-yellow {
+    border: 2px solid var(--green);
+    color: var(--yellow);
+    margin: 0 5px;
+    padding: 10px 25px 8px;
+    margin: 5px 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--yellow);
+    }
+
+    &:active {
+        top: 2px;
+    }
+}
+
+.green {
+    color: var(--green);
+}
+
+.lightbrown {
+    color: var(--lightbrown);
+}
+
+.darkbrown {
+    color: var(--darkbrown);
+}
+
+.yellow {
+    color: var(--yellow)
+}
+
+.white {
+    color: white;
+}
+
+.underline {
+    position: relative;
+    margin-bottom: 22px;
+    text-decoration: none;
+    
+    &:after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        bottom: -14px;
+		left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 365px;
+        margin-bottom: 4px;
+    }
+}
+
+.background--white {
+    background-color: white;
+}
+
+.background--green {
+    background-color: var(--green);
+}
+
+.background--darkbrown {
+    background-color: var(--darkbrown);
+}
+
+.background--lightbrown {
+    background-color: var(--lightbrown);
+}
+
+.background--yellow {
+    background-color: var(--yellow);
+}
+
+.background--white .underline::after {
+    background-color: black;
+}
+
+.background--green .underline::after {
+    background-color: var(--yellow);
+}
+
+.background--darkbrown .underline::after {
+    background-color: var(--yellow);
+}
+
+.background--lightbrown .underline::after {
+    background-color: var(--green);
+}
+
+.background--yellow .underline::after {
+    background-color: var(--darkbrown);
+}
+
+.text--green {
+    color: var(--green);
+}
+
+.text--darkbrown {
+    color: var(--darkbrown);
+}
+
+.text--lightbrown {
+    color: var(--lightbrown);
+}
+
+.text--yellow {
+    color: var(--yellow);
+}
+
+.arrow-button--lightbrown,
+.arrow-button--darkbrown {
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+        direction: rtl;
+        box-shadow: -7px -7px 10px 0px #00000000, -4px -4px 5px 0px #b7b7b700, 7px 7px 4px 0px #0002, 4px 4px 19px 1px #bdbdbd;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        color: #000;
+    }
+
+    &:hover:before {
+        left: auto;
+        right: 0;
+        width: 100%;
+    }
+
+    &:active {
+        top: 2px;
+    }
+}
+
+.leather-seats-icon {
+    height: 32px !important;
+    margin-left: -5px;
+    margin-right: -3px;
+    width: auto !important;
+}

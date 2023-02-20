@@ -1,0 +1,63 @@
+.vehicle-columns {
+  color: var(--green);
+  background-color: var(--yellow);
+  padding: 20px;
+}
+.vehicle-columns .title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "SD Georgia", serif;
+}
+@media (max-width: 500px) {
+  .vehicle-columns .title {
+    font-size: 24px;
+  }
+}
+.car {
+  margin-bottom: 30px;
+  color: var(--green);
+}
+.car:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.car .class {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "SD Georgia", serif;
+}
+.car .desc {
+  color: var(--darkbrown);
+  text-align: center;
+}
+.car .desc > p {
+  font-family: "SD Georgia", serif;
+}
+.car .img-container {
+  position: relative;
+  height: 0;
+  margin-bottom: 30px;
+  padding-bottom: 70%;
+}
+.car .img-container > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: contain;
+}
+.button-container {
+  text-align: center;
+  margin: 30px 0;
+}
+.button-container > a {
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+@import (reference) "../partials/mixins.less";
+
+.hero--slim {
+	position: relative;
+    overflow: hidden;
+
+	.img-container {
+		position: absolute;
+		left: 0; right: 0; top: 0;
+		height: 100%;
+		width: 100%;
+
+		> img {
+			height: 100%;
+			width: 100%;
+			filter: brightness(50%);
+			object-fit: cover;
+		}
+	}
+
+	.text-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 400px;
+		
+		@media (max-width: 767px) {
+			height: 300px;
+		}
+
+		> * {
+			color: var(--yellow);
+            .ubuntu();
+            font-weight: 100;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
