@@ -3,3 +3,83 @@
  * Description: TribuSoft tema för LimoGroup
  * Author: Jonathan M. Turja, Hendrik Walberg
 */
+
+@media(min-width: 1301px) {
+  #site-header {
+    background: rgba(57, 56, 42, 0.5);
+  }
+
+  #site-header .nav-menu {
+    transform: translateY(0) !important;
+    background: none !important;
+    height: 100% !important;
+    margin-bottom: 0 !important;
+  }
+
+  #site-header .nav-menu .nav-main .nav-main-item .nav-drop .nav-drop-item>a {
+    background: rgba(57, 56, 42, 0.5) !important;
+  }
+
+  #site-header .toggle-nav {
+    display: none !important;
+  }
+
+  #site-header .widgets.desktop .wpml-ls-native {
+    display: none;
+  }
+
+  #site-header .widgets.desktop {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  #site-header .book-now {
+    height: 52px;
+    margin: auto;
+  }
+
+  #site-header .widgets.mobile {
+    display: none;
+  }
+
+  #site-header .wpml-ls-legacy-list-horizontal .wpml-ls-flag {
+    width: 25px;
+  }
+
+  #site-header .right {
+    box-shadow: none !important;
+  }
+
+  #site-header .nav-menu .nav-main .nav-main-item .nav-drop .nav-drop-item>a {
+    text-transform: uppercase;
+  }
+
+  #site-header .nav-menu .nav-main .nav-main-item .nav-drop .nav-drop-item>a:hover {
+    color: var(--yellow) !important;
+    text-decoration: underline !important;
+  }
+}
+
+@media(max-width: 1300px) {
+  #site-header .widgets.desktop {
+    display: none;
+  }
+
+  #site-header .widgets.mobile .wpml-ls-native {
+    display: none;
+  }
+
+  #site-header .nav-menu .nav-main .nav-main-item .toggle-nav-drop {
+    display: block !important;
+  }
+
+  #site-header .widgets.mobile {
+    display: block;
+  }
+
+  #site-header .nav-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}

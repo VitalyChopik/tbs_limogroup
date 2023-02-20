@@ -30,6 +30,9 @@
                     {% endif %}
                 </li>
             {% endfor %}
+            <div class="widgets mobile">
+                {{ site_footer_column_1 }}
+            </div>
         </ul>
     </nav>
 
@@ -45,5 +48,8 @@
             <img src="{{ theme.link }}/static/img/hamburger-icon.svg" class="hamburger">
             <img src="{{ theme.link }}/static/img/close-icon.svg" class="close">
         </button>
+        <div class="widgets desktop">
+            {{ site_footer_column_1 }}
+        </div>
     </div>
 </header>
